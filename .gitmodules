@@ -1,3 +1,3 @@
 [submodule "docs/raspberry-srt-live-stream"]
-	path = docs/raspberry-srt-live-stream
+	path = docs/projects/raspberry-srt-live-stream
 	url = git@github.com:MDBox/raspberry-srt-live-stream.git
