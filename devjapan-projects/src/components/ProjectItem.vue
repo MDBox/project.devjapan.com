@@ -27,7 +27,7 @@ const projectPath = ref('raspberry-srt-live-stream')
 const projectItem = ref()
 
 
-marked.use(baseUrl('https://project.devjapan.com/projects/' + projectPath.value + '/'))
+marked.use(baseUrl('https://project.devjapan.com/projects/' + projectPath.value ))
 marked.setOptions({
   highlight: function(code, lang) {
     if (Prism.languages[lang]) {
