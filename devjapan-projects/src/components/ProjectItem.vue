@@ -16,18 +16,16 @@ import 'prismjs/components/prism-json'
 import 'prismjs/components/prism-yaml'
 import 'github-markdown-css/github-markdown.css'
 
-defineProps({
+const props = defineProps({
   projectPath: {
     type: String,
     required: true
   }
 })
 
-const projectPath = ref('raspberry-srt-live-stream')
 const projectItem = ref()
 
-
-marked.use(baseUrl('https://project.devjapan.com/projects/' + projectPath.value ))
+marked.use(baseUrl('https://project.devjapan.com/projects/' + props.projectPath ))
 marked.setOptions({
   highlight: function(code, lang) {
     if (Prism.languages[lang]) {
@@ -39,22 +37,13 @@ marked.setOptions({
 });
 
 onMounted(async () => {
-
-  await fetch('https://project.devjapan.com/projects/' + projectPath.value + '/README.md', {
+  const response = await fetch('https://project.devjapan.com/projects/' + props.projectPath + '/README.md', {
     mode: 'cors'
   })
-    .then(response => response.text())
-    .then(data => {
-      console.log(data)
-      console.log(projectItem)
-      projectItem.value.innerHTML = DOMPurify.sanitize(marked.parse(data))
-      Prism.highlightAll()
-
-    })
-    .catch(error => {
-      console.error('Error:', error)
-    })
+  const responseText = await response.text()
+  projectItem.value.innerHTML = DOMPurify.sanitize(marked.parse(data))
 })
+
 </script>
 
 <template>
