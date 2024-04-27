@@ -37,7 +37,7 @@ marked.setOptions({
 });
 
 onMounted(async () => {
-  const response = await fetch('https://project.devjapan.com/' + props.projectPath + '/README.md', {
+  const response = await fetch('https://project.devjapan.com/projects/' + props.projectPath + '/README.md', {
     mode: 'cors'
   })
   const responseText = await response.text()

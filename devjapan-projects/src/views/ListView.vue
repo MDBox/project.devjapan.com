@@ -26,7 +26,7 @@ onMounted(async () => {
 
 <template>
   <ul class="list-group">
-    <li class="list-group-item" @click="openProject(project.path)" v-for="project of projects">
+    <li class="list-group-item" @click="openProject(project.name)" v-for="project of projects">
       <div class="card">
         <!-- <div class="card-header">IoT</div> -->
         <div class="card-body">
