@@ -20,7 +20,6 @@ onMounted(async () => {
     mode: 'cors'
   })
   projects.value = await response.json()
-  print(projects.value)
 })
 
 </script>
