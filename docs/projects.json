@@ -3,5 +3,10 @@
     "name": "raspberry-srt-live-stream",
     "path": "projects/raspberry-srt-live-stream",
     "url": "https://project.devjapan.com/projects/raspberry-srt-live-stream"
+  },
+  {
+    "name": "deeplens-simon-says",
+    "path": "projects/deeplens-simon-says",
+    "url": "https://project.devjapan.com/projects/deeplens-simon-says"
   }
 ]

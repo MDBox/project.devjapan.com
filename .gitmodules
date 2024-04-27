@@ -1,3 +1,6 @@
 [submodule "docs/raspberry-srt-live-stream"]
 	path = docs/projects/raspberry-srt-live-stream
 	url = git@github.com:MDBox/raspberry-srt-live-stream.git
+[submodule "docs/projects/deeplens-simon-says"]
+	path = docs/projects/deeplens-simon-says
+	url = git@github.com:MDBox/deeplens-simon-says.git
