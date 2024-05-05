@@ -4,3 +4,6 @@
 [submodule "docs/projects/deeplens-simon-says"]
 	path = docs/projects/deeplens-simon-says
 	url = git@github.com:MDBox/deeplens-simon-says.git
+[submodule "docs/projects/example-vuejs-d3"]
+	path = docs/projects/example-vuejs-d3
+	url = git@github.com:MDBox/example-vuejs-d3.git

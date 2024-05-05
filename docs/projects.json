@@ -2,11 +2,19 @@
   {
     "name": "raspberry-srt-live-stream",
     "path": "projects/raspberry-srt-live-stream",
-    "url": "https://project.devjapan.com/projects/raspberry-srt-live-stream"
+    "url": "https://project.devjapan.com/projects/raspberry-srt-live-stream",
+    "type": "repo"
   },
   {
     "name": "deeplens-simon-says",
     "path": "projects/deeplens-simon-says",
-    "url": "https://project.devjapan.com/projects/deeplens-simon-says"
+    "url": "https://project.devjapan.com/projects/deeplens-simon-says",
+    "type": "repo"
+  },
+  {
+    "name": "example-vuejs-d3",
+    "path": "projects/example-vuejs-d3",
+    "url": "https://project.devjapan.com/projects/example-vuejs-d3",
+    "type": "frame"
   }
 ]
